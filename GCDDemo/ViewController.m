@@ -11,6 +11,9 @@
  */
 
 #import "ViewController.h"
+#import "ASERunLoopThread.h"
+
+
 
 @interface ViewController ()
 
@@ -20,14 +23,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self serialQueue];
-    // Do any additional setup after loading the view, typically from a nib.
+//    [self serialQueue];
+    [self createRunloopThread];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Queue GCD
+//=====================================================
+// Thread
 
 - (void)serialQueue
 {
@@ -86,8 +93,29 @@
 
 - (void)useSemaphore
 {
-    dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
+//    dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
 //    dispatch_queue_t queue =
 }
+
+#pragma mark - Thread
+//=====================================================
+// Thread
+- (void)createRunloopThread {
+    ASERunLoopThread *aseThread = [[ASERunLoopThread alloc]init];
+    NSLog(@"ase thread size:%lu", [aseThread stackSize]);
+    [aseThread start];
+}
+
+
+#pragma mark - RunLoop
+//======================================================
+/*
+1) 每个线程都有一个Run Loop，主线程的Run Loop会在App运行时自动运行，子线程中需要手动运行。
+ 
+2) 每个Run Loop都会以一个模式mode来运行，可以使用NSRunLoop的- (BOOL)runMode:(NSString *)mode beforeDate:(NSDate *)limitDate 方法运行在某个特定模式mode。
+ 
+ 3) Run Loop的处理两大类事件源：Timer Source和Input Source(包括performSelector***方法簇、Port或者自定义Input Source)，每个事件源都会绑定在Run Loop的某个特定模式mode上，而且只有RunLoop在这个模式运行的时候才会触发该Timer和Input Source。
+ 
+ */
 
 @end

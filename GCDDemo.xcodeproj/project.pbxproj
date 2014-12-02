@@ -14,6 +14,7 @@
 		E78AEA2219F0C353007DE5E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78AEA2119F0C353007DE5E4 /* Images.xcassets */; };
 		E78AEA2519F0C353007DE5E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78AEA2319F0C353007DE5E4 /* LaunchScreen.xib */; };
 		E78AEA3119F0C353007DE5E4 /* GCDDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AEA3019F0C353007DE5E4 /* GCDDemoTests.m */; };
+		E7D78E231A2E000F009BF838 /* ASERunLoopThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D78E221A2E000F009BF838 /* ASERunLoopThread.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		E78AEA2A19F0C353007DE5E4 /* GCDDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCDDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78AEA2F19F0C353007DE5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E78AEA3019F0C353007DE5E4 /* GCDDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDemoTests.m; sourceTree = "<group>"; };
+		E7D78E211A2E000F009BF838 /* ASERunLoopThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASERunLoopThread.h; sourceTree = "<group>"; };
+		E7D78E221A2E000F009BF838 /* ASERunLoopThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASERunLoopThread.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		E78AEA1319F0C353007DE5E4 /* GCDDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E7D78E201A2DFFFB009BF838 /* Thread */,
 				E78AEA1819F0C353007DE5E4 /* AppDelegate.h */,
 				E78AEA1919F0C353007DE5E4 /* AppDelegate.m */,
 				E78AEA1B19F0C353007DE5E4 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				E78AEA2F19F0C353007DE5E4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7D78E201A2DFFFB009BF838 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				E7D78E211A2E000F009BF838 /* ASERunLoopThread.h */,
+				E7D78E221A2E000F009BF838 /* ASERunLoopThread.m */,
+			);
+			name = Thread;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E78AEA1D19F0C353007DE5E4 /* ViewController.m in Sources */,
+				E7D78E231A2E000F009BF838 /* ASERunLoopThread.m in Sources */,
 				E78AEA1A19F0C353007DE5E4 /* AppDelegate.m in Sources */,
 				E78AEA1719F0C353007DE5E4 /* main.m in Sources */,
 			);
@@ -412,6 +426,7 @@
 				E78AEA3619F0C353007DE5E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E78AEA3719F0C353007DE5E4 /* Build configuration list for PBXNativeTarget "GCDDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				E78AEA3919F0C353007DE5E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
