@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7205FDF1A2FF4B800D86E93 /* ASECFRunLoopThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E7205FDE1A2FF4B800D86E93 /* ASECFRunLoopThread.m */; };
 		E78AEA1719F0C353007DE5E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AEA1619F0C353007DE5E4 /* main.m */; };
 		E78AEA1A19F0C353007DE5E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AEA1919F0C353007DE5E4 /* AppDelegate.m */; };
 		E78AEA1D19F0C353007DE5E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AEA1C19F0C353007DE5E4 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E7205FDD1A2FF4B800D86E93 /* ASECFRunLoopThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASECFRunLoopThread.h; sourceTree = "<group>"; };
+		E7205FDE1A2FF4B800D86E93 /* ASECFRunLoopThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASECFRunLoopThread.m; sourceTree = "<group>"; };
 		E78AEA1119F0C353007DE5E4 /* GCDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78AEA1519F0C353007DE5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E78AEA1619F0C353007DE5E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 			children = (
 				E7D78E211A2E000F009BF838 /* ASERunLoopThread.h */,
 				E7D78E221A2E000F009BF838 /* ASERunLoopThread.m */,
+				E7205FDD1A2FF4B800D86E93 /* ASECFRunLoopThread.h */,
+				E7205FDE1A2FF4B800D86E93 /* ASECFRunLoopThread.m */,
 			);
 			name = Thread;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				E7D78E231A2E000F009BF838 /* ASERunLoopThread.m in Sources */,
 				E78AEA1A19F0C353007DE5E4 /* AppDelegate.m in Sources */,
 				E78AEA1719F0C353007DE5E4 /* main.m in Sources */,
+				E7205FDF1A2FF4B800D86E93 /* ASECFRunLoopThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
